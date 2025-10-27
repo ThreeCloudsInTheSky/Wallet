@@ -152,6 +152,12 @@ namespace TestTask
                         CreateTransaction(Wallets[walletNumber]);
                         break;
                     }
+                case "5":
+                    {
+                        int walletNumber = ChooseWalletNumber();
+                        Console.WriteLine(Wallets[walletNumber].currentBalance);
+                        break;
+                    }
                 case "q": //Выйти
                     {
                         Console.Clear();
